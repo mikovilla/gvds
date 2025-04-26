@@ -90,7 +90,7 @@ namespace gvds.Application
                 if (!IsOverlap(activity.Start, activity.End, ref lastEndTime, firstPick))
                 {
                     selectedActivities.Add(activity);
-                    lastEndTime = activity.End; // ✅ Update end time after selection
+                    lastEndTime = activity.End;
                 }
                 firstPick = false;
             }
